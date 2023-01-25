@@ -7,7 +7,7 @@ if [ "$#" -lt 1 ]; then
     exit 1
 fi
 
-TASK_PATH=../$1
+TASK_PATH=../src/$1
 CLANG_PATH=../run-clang-format.py
 
 if [ ! -f compile_commands.json ]; then
@@ -16,7 +16,7 @@ if [ ! -f compile_commands.json ]; then
 fi
 
 if [ "$#" -eq 2 ]; then
-    TASK_PATH=../../$1
+    TASK_PATH=../../src/$1
     CLANG_PATH=../../run-clang-format.py
 fi
 

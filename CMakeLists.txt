@@ -16,4 +16,4 @@ find_package(Catch REQUIRED)
 
 include_directories(util)
 
-add_subdirectory(archiver)
+add_subdirectory(src/archiver)

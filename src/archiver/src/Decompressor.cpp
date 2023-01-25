@@ -90,4 +90,4 @@ const std::string& Decompressor::GetLastFileName() const {
     return filename_;
 }
 
-}  // namespace archiver
+}  // namespace src

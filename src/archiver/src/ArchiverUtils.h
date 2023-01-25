@@ -26,4 +26,4 @@ struct HuffmanCode {
 
 std::vector<HuffmanCode> CalculateHuffmanCodesByLengths(const std::vector<uint16_t> &codes_length_cnt);
 
-}  // namespace archiver
+}  // namespace src

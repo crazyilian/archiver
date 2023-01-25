@@ -22,4 +22,4 @@ std::vector<HuffmanCode> CalculateHuffmanCodesByLengths(const std::vector<uint16
     return codes;
 }
 
-}  // namespace archiver
+}  // namespace src

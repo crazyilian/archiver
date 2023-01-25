@@ -74,13 +74,13 @@ class ArchiverTester:
 
             self.succeed_test_case(name)
         except subprocess.CalledProcessError:
-            self.fail_test_case(name, "archiver finished with non-zero exit code")
+            self.fail_test_case(name, "src finished with non-zero exit code")
 
 
 if __name__ == "__main__":
     tester = ArchiverTester(archiver_executable=sys.argv[1], test_data_dir=sys.argv[2])
 
-    print("Running archiver tests\nExecutable: {executable}\nTest data: {test_data}".format(executable=tester.archiver_executable, test_data=tester.test_data_dir))
+    print("Running src tests\nExecutable: {executable}\nTest data: {test_data}".format(executable=tester.archiver_executable, test_data=tester.test_data_dir))
 
     if not tester.run_tests():
         sys.exit(1)

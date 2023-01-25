@@ -26,4 +26,4 @@ private:
     uint16_t NextSymbol(BinaryTrie<uint16_t> &trie);
 };
 
-}  // namespace archiver
+}  // namespace src
